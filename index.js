@@ -9,5 +9,8 @@ express()
   .get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
   })
+  .get('/configuremenu', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/configuremenu.html'));
+  })
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
